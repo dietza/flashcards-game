@@ -39,7 +39,7 @@ describe('Turn', () => {
     expect(turn.card).to.be.an.instanceOf(Card);
   });
 
-  it('should be able to return the guess guess made by the user', () => {
+  it('should be able to return the guess made by the user', () => {
     const turn = new Turn('in the creation phase', card2);
     turn.returnGuess();
     expect(turn.guess).to.equal('in the creation phase');
@@ -63,6 +63,12 @@ describe('Turn', () => {
     const turn = new Turn('type coercion', card1);
     turn.evaluateGuess();
     expect(turn.eval).to.equal(true);
+  });
+
+  it('should also evaluate an incorrect answer', () => {
+    const turn = new Turn('magic', card1);
+    turn.evaluateGuess();
+    expect(turn.eval).to.equal(false);
   });
 
   it('should give a user feedback reflecting a correct guess', () => {
