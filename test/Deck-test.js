@@ -43,4 +43,10 @@ describe('Deck', () => {
     let numCards = deck.countCards();
     expect(numCards).to.equal(3);
   });
+
+  it('should be able to count cards in the deck', () => {
+    let deck = new Deck();
+    let numCards = deck.countCards();
+    expect(numCards).to.equal(0);
+  });
 });
