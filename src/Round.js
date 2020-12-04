@@ -4,7 +4,6 @@ class Round {
     this.deck = fullDeck,
     this.currentCard = this.deck[0],
     this.turns = 0,
-    // this.counter = 0,
     this.incorrectGuesses = [],
     this.percentCorrect = 0,
     this.endMsg = '',
@@ -29,10 +28,6 @@ class Round {
   }
 
   updateCurrentCard() {
-    // this.counter += 1;
-
-    console.log('this.currentCard ; ', this.currentCard);
-
     this.currentCard = this.deck[this.turns];
   }
 
