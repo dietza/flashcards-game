@@ -31,7 +31,7 @@ describe('Round', () => {
     expect(Round).to.be.a('function');
   });
 
-  it('should be an instance of Deck', () => {
+  it('should be an instance of Round', () => {
     expect(round).to.be.an.instanceOf(Round);
   });
 
