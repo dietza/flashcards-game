@@ -4,7 +4,6 @@ class Round {
     this.deck = fullDeck,
     this.currentCard = this.deck[0],
     this.turns = 0,
-    this.counter = 0,
     this.incorrectGuesses = [],
     this.percentCorrect = 0,
     this.endMsg = '',
@@ -12,7 +11,7 @@ class Round {
   }
 
   returnCurrentCard() {
-    if (this.turns !== 0) {
+    if (this.turns > 0) {
       this.updateCurrentCard();
     }
     return this.currentCard;
@@ -29,8 +28,7 @@ class Round {
   }
 
   updateCurrentCard() {
-    this.counter += 1;
-    this.currentCard = this.deck[this.counter];
+    this.currentCard = this.deck[this.turns];
   }
 
   storeIncorrectGuess() {
@@ -48,7 +46,8 @@ class Round {
   endRound() {
     this.calculatePercentCorrect();
     if (this.turns === this.deck.length) {
-      this.endMsg = `**Round over!** You answered ${this.percentCorrect}% of the questions correctly!`
+      this.endMsg = `**Round over!** You answered ${this.percentCorrect}% of the questions correctly!`;
+      console.log(this.endMsg)
     }
   }
 }

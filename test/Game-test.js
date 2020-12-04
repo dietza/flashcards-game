@@ -40,10 +40,10 @@ describe('Game', () => {
   });
 
   it('should keep track of the current round', () => {
-    expect(game.currentRound.counter).to.equal(0);
+    expect(game.currentRound.turns).to.equal(0);
     game.currentRound.takeTurn();
     game.currentRound.takeTurn();
-    expect(game.currentRound.counter).to.equal(2);
+    expect(game.currentRound.turns).to.equal(2);
     expect(game.currentRound).to.be.an.instanceOf(Round);
   });
 });
