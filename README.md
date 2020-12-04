@@ -13,4 +13,4 @@ Clone down the repo. The user will then run `node index.js` to start the server 
 
 ## Contributors
 
-* [Allison Dietz](https://github.com/dietza)
+* Allison Dietz - [GitHub](https://github.com/dietza)
