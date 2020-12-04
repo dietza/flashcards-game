@@ -9,7 +9,7 @@ This game allows a user to play through a deck of 30 flash cards to test their k
 Clone down the repo. The user will then run `node index.js` to start the server and begin the game. The server will prompt the user with questions and multiple choice annswers which they may select by clicking the correct number or navigating using the arrow keys and clicking enter.
 
 ## Game Play
-![Start Game]![ezgif com-gif-maker](https://user-images.githubusercontent.com/64617223/101124161-b52d6000-35b3-11eb-99c9-5a89b0eaba02.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/64617223/101124161-b52d6000-35b3-11eb-99c9-5a89b0eaba02.gif)
 
 ## Contributors
 
