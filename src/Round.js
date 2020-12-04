@@ -25,6 +25,7 @@ class Round {
     this.storeIncorrectGuess();
     this.returnCurrentCard();
     this.endRound();
+    return this.currentTurn.feedback;
   }
 
   updateCurrentCard() {
