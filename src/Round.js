@@ -25,6 +25,7 @@ class Round {
     this.storeIncorrectGuess();
     this.returnCurrentCard();
     this.endRound();
+    return this.currentTurn.feedback;
   }
 
   updateCurrentCard() {
@@ -48,7 +49,6 @@ class Round {
     this.calculatePercentCorrect();
     if (this.turns === this.deck.length) {
       this.endMsg = `**Round over!** You answered ${this.percentCorrect}% of the questions correctly!`
-      console.log(this.endMsg);
     }
   }
 }
