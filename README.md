@@ -14,3 +14,6 @@ Clone down the repo. The user will then run `node index.js` to start the server 
 ## Contributors
 
 * Allison Dietz - [GitHub](https://github.com/dietza)
+
+While this was a solo project, part of my learning goals were to re-emphasize project planning and agile workflow practices.
+Starting by setting up GH [issues](https://github.com/dietza/flashcards-game/issues) and an integrated [project board](https://github.com/dietza/flashcards-game/projects/2) was a great help even without multiple collaborators.
